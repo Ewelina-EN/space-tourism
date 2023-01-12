@@ -38,13 +38,14 @@ export const Header = styled.div`
     letter-spacing: 2.7px;
     font-size: 20px;
     font-weight: 200;
+    margin: 32px 0 24px 0;
 
      @media (min-width: 768px) {
         font-size: 20px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 3.38px;
-        margin: 0 0 0 -475px;
+        margin: 60px 0 0 -475px;
     }
 
     @media(min-width: 1280px) {
@@ -79,13 +80,11 @@ export const Section = styled.article`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 29px 30px;
+    margin: 24px 30px 0 24px;
     /* padding: 29px 0 58px 0; */
 
     @media (min-width: 768px) {
-        flex-direction: column-reverse;
         width: 458px;
-        margin: 40px 30px 0 30px;
     }
 
      @media(min-width: 1280px) {
@@ -96,15 +95,16 @@ export const Section = styled.article`
     }
 `;
 
-
 export const Image = styled.img`
-        width: 177px;
-        height: 222px;
+        width: 100%;
+        height: 170px;
         border-bottom: 2px solid #383B4B;
+        object-fit: cover;
+        object-position: 50% 85%;
         
     @media (min-width: 768px) {
-        width: 456px;
-        height: 572px;
+        /* width: 456px; */
+        height: 310px;
         margin: 40px 0;
         border-bottom: none;
     }
@@ -119,6 +119,10 @@ export const Image = styled.img`
 
 export const TechNav = styled.nav`
     width: 150px;
+
+     @media (min-width: 768px) {
+        width: 210px;
+    }
 `;
 
 export const MenuList = styled.ul`
@@ -127,6 +131,7 @@ export const MenuList = styled.ul`
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    margin: 0;
 `;
 
 export const Link = styled(NavLink)`
@@ -147,13 +152,14 @@ export const Span = styled.span`
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    height:40px;
+    height: 40px;
     width: 40px;
     /* margin: 34px 15px 0 0; */
 
-    &:nth-child(2) {
-            margin-right: 0;
-        }
+     @media (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+    }
 `;
 
 export const Info = styled.section`
@@ -161,8 +167,13 @@ export const Info = styled.section`
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
-    padding: 26px 0 100px 0;
+    padding: 26px 0;
     margin:0;
+
+     @media (min-width: 768px) {
+        width: 456px;
+        
+    }
 `;
 
 export const Title = styled.p`
@@ -174,6 +185,12 @@ export const Title = styled.p`
     color: #D0D6F9;
     text-transform: uppercase;
     margin: 0 0 10px 0;
+
+     @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
 `;
 
 export const Keyword = styled.p`
@@ -184,6 +201,11 @@ export const Keyword = styled.p`
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0;
+
+     @media (min-width: 768px) {
+        font-size: 40px;
+        line-height: 46px;
+    }
 `;
 
 export const Definition = styled.p`
@@ -193,4 +215,10 @@ export const Definition = styled.p`
     line-height: 25px;
     text-align: center;
     width: 327px;
+
+     @media (min-width: 768px) {
+        width: 456px;
+        font-size: 16px;
+        line-height: 28px;
+    }
 `;

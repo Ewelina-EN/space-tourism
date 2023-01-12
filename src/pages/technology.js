@@ -1,6 +1,6 @@
 import { Container, Header, HeaderSpan, Section, Image, MenuList, Link, Span, TechNav, Info, Title, Keyword, Definition } from "../style/technology/styled";
-import vehicle from "../assets/technology/image-launch-vehicle-landscape.jpg";
-import capsule from "../assets/technology/image-space-capsule-portrait.jpg";
+import vehicle from "../assets/technology/image-launch-vehicle-portrait.jpg";
+import capsule from "../assets/technology/image-space-capsule-landscape.jpg";
 import spaceport from "../assets/technology/image-spaceport-portrait.jpg";
 import { useState } from "react";
 
@@ -47,6 +47,5 @@ export const Technology = () => {
                 </Section>
             </Container>
         </>
-        
     )
-}
+};
