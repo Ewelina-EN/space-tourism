@@ -1,6 +1,6 @@
-import { Container, Header, HeaderSpan, Section, Image, MenuList, Link, Span, TechNav, Info, Title, Keyword, Definition } from "../style/technology/styled";
+import { Container, Header, HeaderSpan, Section, Image, MenuList, Link, Span, TechNav, Info, Title, Keyword, Definition, TechInfo } from "../style/technology/styled";
 import vehicle from "../assets/technology/image-launch-vehicle-portrait.jpg";
-import capsule from "../assets/technology/image-space-capsule-landscape.jpg";
+import capsule from "../assets/technology/image-space-capsule-portrait.jpg";
 import spaceport from "../assets/technology/image-spaceport-portrait.jpg";
 import { useState } from "react";
 
@@ -30,8 +30,10 @@ export const Technology = () => {
             <Container>
             <Header>
                     <HeaderSpan>03</HeaderSpan> Space launch 101</Header>
-                    <Image src={image()} name={name} alt="photo of the crew" />
+                    
                 <Section>
+                    <Image src={image()} name={name} alt="photo of the crew" />
+                    <TechInfo>
                     <TechNav>
                         <MenuList>
                             <Link to="/" onClick={(e) => change(e, 0)}><Span>1</Span></Link>
@@ -43,7 +45,8 @@ export const Technology = () => {
                         <Title>The terminology...</Title>
                         <Keyword>{ name }</Keyword>
                         <Definition>{description}</Definition>
-                    </Info>
+                        </Info>
+                        </TechInfo>
                 </Section>
             </Container>
         </>

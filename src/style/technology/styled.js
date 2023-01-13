@@ -22,7 +22,6 @@ export const Container = styled.main`
       
     @media (min-width: 1280px) {
         background-image: url(${TDesktop});
-        justify-content: flex-end;
     }
 
     @media (min-width: 1990px) {
@@ -52,7 +51,7 @@ export const Header = styled.div`
         font-weight: 400;
         font-size: 28px;
         letter-spacing: 4.725px;
-        margin: 0 0 0 -800px;
+        margin: 0 0 0 -750px;
     }
 `;
 
@@ -81,39 +80,52 @@ export const Section = styled.article`
     align-items: center;
     justify-content: center;
     margin: 24px 30px 0 24px;
+    width: 100%;
     /* padding: 29px 0 58px 0; */
-
-    @media (min-width: 768px) {
-        width: 458px;
-    }
 
      @media(min-width: 1280px) {
         flex-direction: row-reverse;
-        justify-content: space-evenly;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: space-between;
+        margin: 26px 0 0 0;
+    }
+
+    @media (min-width: 1990px) {
         width: 1200px;
+        align-items: center;
+        justify-content: center;
     }
 `;
 
 export const Image = styled.img`
         width: 100%;
         height: 170px;
-        border-bottom: 2px solid #383B4B;
         object-fit: cover;
-        object-position: 50% 85%;
+        object-position: 50% 55%;
         
     @media (min-width: 768px) {
-        /* width: 456px; */
         height: 310px;
         margin: 40px 0;
-        border-bottom: none;
     }
 
     @media (min-width: 1280px) {
-        max-width:568px;
-        max-height: 712px;
-        border-bottom: none;
+        width: 515px;
+        height: 527px;
         margin: 0;
+        object-fit: none;
+        object-position: 100% 100%;
+    }
+`;
+
+export const TechInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 34px 0 0 0;
+
+     @media (min-width: 1280px) {
+        flex-direction: row;
     }
 `;
 
@@ -123,15 +135,31 @@ export const TechNav = styled.nav`
      @media (min-width: 768px) {
         width: 210px;
     }
+
+    @media (min-width: 1280px) {
+        margin: 0 0 0 50px;
+    }
 `;
 
 export const MenuList = styled.ul`
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0;
     margin: 0;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1280px) {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 350px;
+    }    
 `;
 
 export const Link = styled(NavLink)`
@@ -160,6 +188,12 @@ export const Span = styled.span`
         width: 60px;
         height: 60px;
     }
+
+     @media (min-width: 1280px) {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
 `;
 
 export const Info = styled.section`
@@ -171,8 +205,12 @@ export const Info = styled.section`
     margin:0;
 
      @media (min-width: 768px) {
-        width: 456px;
-        
+        width: 456px;   
+    }
+
+     @media (min-width: 1280px) {
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
 `;
 
@@ -206,6 +244,11 @@ export const Keyword = styled.p`
         font-size: 40px;
         line-height: 46px;
     }
+
+     @media (min-width: 1280px) {
+        font-size: 50px;
+        line-height: 64px;
+    }
 `;
 
 export const Definition = styled.p`
@@ -220,5 +263,11 @@ export const Definition = styled.p`
         width: 456px;
         font-size: 16px;
         line-height: 28px;
+    }
+
+     @media (min-width: 1280px) {
+        width: 395px;
+        text-align: left;
+
     }
 `;
