@@ -1,3 +1,4 @@
+
 import { Homepage } from "./pages/homepage";
 // import { Nav } from "./pages/navigation";
 import GlobalStyle from "./style/globalStyle";
@@ -17,6 +18,7 @@ function App() {
       </Router>   
     </>
   );
+
 }
 
 export default App;
