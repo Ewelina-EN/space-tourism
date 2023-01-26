@@ -17,8 +17,6 @@ module.exports = {
   rules: {
     "no-unused-vars": "warn",
     "prettier/prettier": "error",
-    rules: {
-      "react/jsx-filename-extension": [1, { allow: "as-needed" }],
-    },
+    "react/jsx-filename-extension": [1, { extensions: [".js"] }],
   },
 };
