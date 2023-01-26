@@ -17,5 +17,5 @@ module.exports = {
   },
   settings: {
     "html/xml-extensions": [".html"],
-   },
+  },
 };
