@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Navigation = styled.div`
   display: flex;
@@ -6,9 +7,14 @@ export const Navigation = styled.div`
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  font-family: "Barlow", sans-serif;
+
+  @media (min-width: 768px) {
+    align-items: center;
+  }
 
   @media (min-width: 1280px) {
-    align-items: center;
+    margin-top: 40px;
   }
 `;
 
@@ -17,7 +23,7 @@ export const ImgLogo = styled.img`
   margin: 24px 0 0 24px;
 
   @media (min-width: 768px) {
-    margin: 24px 0 0 39px;
+    margin: 0 0 0 30px;
     width: 48px;
   }
 `;
@@ -27,16 +33,12 @@ export const Menu = styled.nav`
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-evenly;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.7742px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
   transform: ${({ open }) => (open ? "translateX(0%);" : "translateX(100%);")};
 
   @media (min-width: 768px) {
-    display: flex;
-  }
-
-  @media (min-width: 1280px) {
-    display: flex;
+    transform: none;
   }
 `;
 
@@ -45,24 +47,25 @@ export const MenuList = styled.ul`
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  padding: 60px 160px 340px 22px;
+  padding: 60px 140px 340px 22px;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 50px;
-    width: 500px;
+    padding: 25px;
+    margin: 10px;
   }
 
-  @media (min-width: 1208px) {
+  @media (min-width: 1280px) {
     justify-content: space-evenly;
-    width: 830px;
+    padding: 30px 100px;
+    width: 850px;
   }
 `;
 
-export const Span = styled.span`
-  display: inline-block;
-  font-family: "Barlow Condensed";
+export const ListItem = styled(Link)`
+  display: inline;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
@@ -71,10 +74,22 @@ export const Span = styled.span`
   text-decoration: none;
   border-bottom: 3px transparent solid;
   padding: 30px 0 5px 0;
-  margin: 0;
 
   @media (min-width: 768px) {
-    padding: 0;
+    font-size: 14px;
+    padding: 0 20px 0 0;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+  }
+`;
+
+export const Number = styled.span`
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 
@@ -86,19 +101,6 @@ export const Hamburger = styled.img`
   right: 0;
 
   @media (min-width: 768px) {
-    display: none;
-  }
-`;
-
-export const CloseIcon = styled.img`
-  width: 30px;
-  cursor: pointer;
-  margin: 24px 24px 0 0;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-  @media (min-width: 1280px) {
     display: none;
   }
 `;
