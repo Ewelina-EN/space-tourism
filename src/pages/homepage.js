@@ -9,7 +9,7 @@ import {
   BtnSpan,
 } from "../style/homepage/styled";
 
-export const Homepage = () => {
+export default function Homepage(){
   return (
     <Container>
       <TextSection>
