@@ -11,21 +11,23 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
 
   @media (min-width: 768px) {
     background-image: url(${imgBackgroundTablet});
   }
-  @media (min-width: 1028px) {
+  @media (min-width: 1280px) {
     background-image: url(${imgBackgroundDesktop});
     flex-direction: row;
     justify-content: space-evenly;
-    min-height: 760px;
+    align-items: center;
   }
 `;
 
 export const TextSection = styled.section`
   width: 327px;
-  padding: 0;
 
   @media (min-width: 768px) {
     width: 450px;
@@ -33,9 +35,9 @@ export const TextSection = styled.section`
     padding: 0;
     margin: 65px 0 100px 0;
   }
-  @media (min-width: 1028px) {
+  @media (min-width: 1280px) {
     width: 650px;
-    margin: 0 0 0 0;
+    margin: 100px 0 0 0;
   }
 `;
 
@@ -54,10 +56,11 @@ export const SmallHeader = styled.p`
     letter-spacing: 3.375px;
   }
 
-  @media (min-width: 1028px) {
+  @media (min-width: 1280px) {
     font-size: 28px;
     line-height: 34px;
-    letter-spacing: 4.725px;
+    letter-spacing: 4.7px;
+    text-align: left;
   }
 `;
 
@@ -73,11 +76,13 @@ export const BigHeader = styled.p`
   @media (min-width: 768px) {
     line-height: 150px;
     margin: 24px 0;
+    font-size: 150px;
   }
 
-  @media (min-width: 1028px) {
+  @media (min-width: 1280px) {
     font-size: 150px;
     line-height: 172px;
+    text-align: left;
   }
 `;
 
@@ -94,10 +99,10 @@ export const Content = styled.p`
     text-align: center;
   }
 
-  @media (min-width: 1028px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
     line-height: 32px;
-    padding: 0 90px;
+    padding: 0 180px 0 0;
     text-align: left;
   }
 `;
@@ -108,24 +113,23 @@ export const HomeButton = styled.button`
   border: 55px transparent;
   letter-spacing: 2px;
   overflow: visible;
-  margin: 0 0 50px 0;
-  padding: 65px;
   background-color: #ffffff00;
+  margin-top: 50px;
 
   &:hover {
     background: transparent;
   }
 
   @media (min-width: 768px) {
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
 
     &:hover {
       background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(81.5485px);
+      backdrop-filter: blur(81.5px);
     }
 
-    @media (min-width: 1028px) {
-      margin: 0;
+    @media (min-width: 1280px) {
+      margin: 250px 0 0 0;
 
       &:hover {
         background: transparent;
@@ -154,9 +158,6 @@ export const BtnSpan = styled.span`
     line-height: 37px;
     letter-spacing: 2px;
     padding: 0;
-  }
-
-  @media (min-width: 1028px) {
     font-size: 32px;
   }
 `;
