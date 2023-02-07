@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   Container,
   Header,
-  Number,
+  Span,
   Section,
   Image,
   Tab,
@@ -53,7 +53,7 @@ export default function Destination() {
   return (
     <Container>
       <Header>
-        <Number>01</Number>Pick your destination
+        <Span>01</Span>Pick your destination
       </Header>
       <Section>
         <Image src={image()} name={name} alt="photo of the planet" />
