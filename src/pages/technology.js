@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import {
   Container,
-  Header,
-  HeaderSpan,
   Section,
   Image,
   MenuList,
@@ -10,7 +8,7 @@ import {
   Span,
   TechNav,
   Info,
-  Title,
+  Terminology,
   Keyword,
   Definition,
   TechInfo,
@@ -18,6 +16,7 @@ import {
 import vehicle from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import capsule from "../assets/technology/image-space-capsule-portrait.jpg";
 import spaceport from "../assets/technology/image-spaceport-portrait.jpg";
+import Title from "../common/Title";
 
 const data = require("../data.json");
 
@@ -41,10 +40,7 @@ export default function Technology() {
   };
   return (
     <Container>
-      <Header>
-        <HeaderSpan>03</HeaderSpan> Space launch 101
-      </Header>
-
+      <Title number="03" title="Space launch 101" />
       <Section>
         <Image src={image()} name={name} alt="photo of the crew" />
         <TechInfo>
@@ -62,7 +58,7 @@ export default function Technology() {
             </MenuList>
           </TechNav>
           <Info>
-            <Title>The terminology...</Title>
+            <Terminology>The terminology...</Terminology>
             <Keyword>{name}</Keyword>
             <Definition>{description}</Definition>
           </Info>

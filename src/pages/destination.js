@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import {
   Container,
-  Header,
-  Span,
   Section,
   Image,
   Tab,
   Planet,
-  Title,
+  PlanetName,
   Info,
   Data,
   DataInfo,
@@ -21,6 +19,7 @@ import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
+import Title from "../common/Title/index";
 
 // TODO: przeczytaj o require
 const data = require("../data.json");
@@ -52,9 +51,7 @@ export default function Destination() {
 
   return (
     <Container>
-      <Header>
-        <Span>01</Span>Pick your destination
-      </Header>
+      <Title number="01" title="Pick your destination" />
       <Section>
         <Image src={image()} name={name} alt="photo of the planet" />
         <Tab>
@@ -75,7 +72,7 @@ export default function Destination() {
             </MenuList>
           </DestinationNav>
           <Planet>
-            <Title>{name}</Title>
+            <PlanetName>{name}</PlanetName>
             <Info>{description}</Info>
           </Planet>
           <Data>

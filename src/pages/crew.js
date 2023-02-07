@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import {
   Container,
-  Header,
-  HeaderSpan,
   Section,
   Image,
   CrewNavigation,
@@ -19,6 +17,7 @@ import commander from "../assets/crew/image-douglas-hurley.png";
 import specialist from "../assets/crew/image-mark-shuttleworth.png";
 import pilot from "../assets/crew/image-victor-glover.png";
 import engieneer from "../assets/crew/image-anousheh-ansari.png";
+import Title from "../common/Title";
 
 const data = require("../data.json");
 
@@ -47,9 +46,7 @@ export default function Crew() {
 
   return (
     <Container>
-      <Header>
-        <HeaderSpan>02</HeaderSpan> Meet your crew
-      </Header>
+      <Title number="02" title="Meet your crew" />
       <Section>
         <Image src={image()} name={name} alt="photo of the crew" />
         <SectionCrew>

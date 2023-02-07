@@ -14,5 +14,6 @@ module.exports = {
     "no-unused-vars": "warn",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
+    "react/prop-types": "off",
   },
 };

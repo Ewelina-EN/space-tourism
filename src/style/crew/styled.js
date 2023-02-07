@@ -31,49 +31,6 @@ export const Container = styled.main`
   }
 `;
 
-export const Header = styled.div`
-  font-family: "Barlow Condensed";
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 2.7px;
-  font-size: 20px;
-  font-weight: 200;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 3.38px;
-    margin: 0 0 0 -475px;
-  }
-
-  @media (min-width: 1280px) {
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: 4.725px;
-    margin: 0 0 0 -800px;
-  }
-`;
-
-export const HeaderSpan = styled.span`
-  padding-right: 15px;
-  opacity: 0.25;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 3.38px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 28px;
-    letter-spacing: 4.725px;
-  }
-`;
-
 export const Section = styled.article`
   display: flex;
   flex-direction: column;

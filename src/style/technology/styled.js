@@ -214,7 +214,7 @@ export const Info = styled.section`
   }
 `;
 
-export const Title = styled.p`
+export const Terminology = styled.p`
   font-family: "Barlow Condensed";
   font-size: 14px;
   line-height: 17px;
