@@ -12,7 +12,7 @@ function App() {
       {/* <Nav/> */}
       <GlobalStyle />
       <Routes>
-        <Route path="/space-tourism-website-react-NEW" element={<Homepage />} />
+        <Route path="/space-tourism" element={<Homepage />} />
         <Route path="/destination" element={<Destination />} />
         <Route path="/crew" element={<Crew />} />
       </Routes>
