@@ -1,6 +1,6 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-// eslint-disable-next-line import/prefer-default-export, no-undef
 export const ListItem = styled(Link)`
   display: inline;
   font-family: "Barlow Condensed", sans-serif;
