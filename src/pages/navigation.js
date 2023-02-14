@@ -4,13 +4,12 @@ import {
   ImgLogo,
   Menu,
   MenuList,
-  ListItem,
-  Number,
   Hamburger,
 } from "../style/navigation/styled";
 import logo from "../assets/shared/logo.svg";
 import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
+import NavButton from "../common/NavButton";
 
 export default function Nav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -21,18 +20,10 @@ export default function Nav() {
         <ImgLogo src={logo} alt="Space logo" />
         <Menu open={navOpen}>
           <MenuList>
-            <ListItem to="/space-tourism/">
-              <Number>00</Number> HOME
-            </ListItem>
-            <ListItem to="/destination/">
-              <Number>01</Number> DESTINATION
-            </ListItem>
-            <ListItem to="/crew/">
-              <Number>02</Number> CREW
-            </ListItem>
-            <ListItem to="/technology/">
-              <Number>03</Number> TECHNOLOGY
-            </ListItem>
+            <NavButton number="00" name="HOME" link="/space-tourism" />
+            <NavButton number="01" name="DESTINATION" link="/destination" />
+            <NavButton number="02" name="CREW" link="/crew" />
+            <NavButton number="03" name="TECHNOLOGY" link="/technology" />
           </MenuList>
         </Menu>
       </Navigation>
