@@ -20,10 +20,25 @@ export default function Nav() {
         <ImgLogo src={logo} alt="Space logo" />
         <Menu open={navOpen}>
           <MenuList>
-            <NavButton number="00" name="HOME" link="/space-tourism" />
-            <NavButton number="01" name="DESTINATION" link="/destination" />
-            <NavButton number="02" name="CREW" link="/crew" />
-            <NavButton number="03" name="TECHNOLOGY" link="/technology" />
+            <NavButton
+              number="00"
+              name="HOME"
+              link="/space-tourism"
+              size="big"
+            />
+            <NavButton
+              number="01"
+              name="DESTINATION"
+              link="/destination"
+              size="big"
+            />
+            <NavButton number="02" name="CREW" link="/crew" size="big" />
+            <NavButton
+              number="03"
+              name="TECHNOLOGY"
+              link="/technology"
+              size="big"
+            />
           </MenuList>
         </Menu>
       </Navigation>
