@@ -13,13 +13,14 @@ import {
   DataSpan,
   DestinationNav,
   MenuList,
-  Link,
+  ListItem,
 } from "../style/destination/styled";
 import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
 import Title from "../common/Title/index";
+import NavButton from "../common/NavButton";
 
 // TODO: przeczytaj o require
 const data = require("../data.json");
@@ -57,18 +58,42 @@ export default function Destination() {
         <Tab>
           <DestinationNav>
             <MenuList>
-              <Link to="/" onClick={(e) => change(e, 0)}>
+              {/* <ListItem to="/" onClick={(e) => change(e, 0)}>
                 Moon
-              </Link>
-              <Link to="/" onClick={(e) => change(e, 1)}>
+              </ListItem> <ListItem to="/" onClick={(e) => change(e, 1)}>
                 Mars
-              </Link>
-              <Link to="/" onClick={(e) => change(e, 2)}>
+              </ListItem>
+              <ListItem to="/" onClick={(e) => change(e, 2)}>
                 Europe
-              </Link>
-              <Link to="/" onClick={(e) => change(e, 3)}>
+              </ListItem>
+              <ListItem to="/" onClick={(e) => change(e, 3)}>
                 Titan
-              </Link>
+              </ListItem>
+              */}
+              <NavButton
+                name="Moon"
+                size="medium"
+                link="/destination"
+                onClick={(e) => change(e, 1)}
+              />
+              <NavButton
+                name="Mars"
+                size="medium"
+                link="/destination"
+                onClick={(e) => change(e, 1)}
+              />
+              <NavButton
+                name="Europe"
+                size="medium"
+                link="/destination"
+                onClick={(e) => change(e, 1)}
+              />
+              <NavButton
+                name="Titan"
+                size="medium"
+                link="/destination"
+                onClick={(e) => change(e, 1)}
+              />
             </MenuList>
           </DestinationNav>
           <Planet>

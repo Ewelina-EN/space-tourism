@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import DDesktop from "../../assets/destination/background-destination-desktop.jpg";
 import DTablet from "../../assets/destination/background-destination-tablet.jpg";
 import DMobile from "../../assets/destination/background-destination-mobile.jpg";
@@ -129,7 +129,7 @@ export const MenuList = styled.ul`
   }
 `;
 
-export const Link = styled(NavLink)`
+export const ListItem = styled(Link)`
   color: #d0d6f9;
   text-decoration: none;
 
