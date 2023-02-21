@@ -205,25 +205,3 @@ export const Name = styled.p`
     line-height: 64px;
   }
 `;
-
-export const Info = styled.p`
-  font-family: "Barlow";
-  color: #d0d6f9;
-  font-size: 15px;
-  line-height: 25px;
-  text-align: center;
-  width: 100%;
-  margin-top: 10px;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 32px;
-    text-align: left;
-    padding-right: 278px;
-  }
-`;

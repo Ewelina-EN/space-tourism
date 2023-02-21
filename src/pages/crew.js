@@ -10,7 +10,6 @@ import {
   SectionCrew,
   Role,
   Name,
-  Info,
   PersonInfo,
 } from "../style/crew/styled";
 import commander from "../assets/crew/image-douglas-hurley.png";
@@ -18,6 +17,7 @@ import specialist from "../assets/crew/image-mark-shuttleworth.png";
 import pilot from "../assets/crew/image-victor-glover.png";
 import engieneer from "../assets/crew/image-anousheh-ansari.png";
 import Title from "../common/Title";
+import Paragraph from "../common/Paragraph";
 
 const data = require("../data.json");
 
@@ -69,7 +69,7 @@ export default function Crew() {
           <PersonInfo>
             <Role>{role}</Role>
             <Name>{name}</Name>
-            <Info>{bio}</Info>
+            <Paragraph page="crew" description={bio} />
           </PersonInfo>
         </SectionCrew>
       </Section>

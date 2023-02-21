@@ -10,13 +10,13 @@ import {
   Info,
   Terminology,
   Keyword,
-  Definition,
   TechInfo,
 } from "../style/technology/styled";
 import vehicle from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import capsule from "../assets/technology/image-space-capsule-portrait.jpg";
 import spaceport from "../assets/technology/image-spaceport-portrait.jpg";
 import Title from "../common/Title";
+import Paragraph from "../common/Paragraph";
 
 const data = require("../data.json");
 
@@ -60,7 +60,7 @@ export default function Technology() {
           <Info>
             <Terminology>The terminology...</Terminology>
             <Keyword>{name}</Keyword>
-            <Definition>{description}</Definition>
+            <Paragraph page="technology" description={description} />
           </Info>
         </TechInfo>
       </Section>

@@ -6,14 +6,13 @@ import {
   Tab,
   Planet,
   PlanetName,
-  Info,
   Data,
   DataInfo,
   DataP,
   DataSpan,
   DestinationNav,
   MenuList,
-  ListItem,
+  // ListItem,
 } from "../style/destination/styled";
 import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
@@ -21,6 +20,7 @@ import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
 import Title from "../common/Title/index";
 import NavButton from "../common/NavButton";
+import Paragraph from "../common/Paragraph";
 
 // TODO: przeczytaj o require
 const data = require("../data.json");
@@ -73,7 +73,6 @@ export default function Destination() {
               <NavButton
                 name="Moon"
                 size="medium"
-                link="/destination"
                 onClick={(e) => change(e, 1)}
               />
               <NavButton
@@ -98,7 +97,7 @@ export default function Destination() {
           </DestinationNav>
           <Planet>
             <PlanetName>{name}</PlanetName>
-            <Info>{description}</Info>
+            <Paragraph page="destination" description={description} />
           </Planet>
           <Data>
             <DataInfo>

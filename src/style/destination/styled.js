@@ -177,34 +177,6 @@ export const PlanetName = styled.p`
   }
 `;
 
-export const Info = styled.p`
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  color: #d0d6f9;
-  font-size: 15px;
-  line-height: 25px;
-  text-align: center;
-  width: 327px;
-  margin: 0 0 20px 0;
-  height: 125px;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 28px;
-    width: 575px;
-    height: 84px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 32px;
-    width: 450px;
-    margin: 0 0 50px 0;
-    text-align: left;
-  }
-`;
-
 export const Data = styled.section`
   display: flex;
   flex-direction: column;
