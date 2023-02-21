@@ -34,9 +34,5 @@ export const ListItem = styled(Link)`
 `;
 
 export const Number = styled.span`
-  font-weight: 700;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
+  font-weight: bold;
 `;
