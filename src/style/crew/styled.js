@@ -22,7 +22,6 @@ export const Container = styled.main`
 
   @media (min-width: 1280px) {
     background-image: url(${CDesktop});
-    justify-content: flex-end;
   }
 
   @media (min-width: 1990px) {
@@ -47,8 +46,8 @@ export const Section = styled.article`
 
   @media (min-width: 1280px) {
     flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
+    margin: 0;
     width: 1200px;
   }
 `;
@@ -68,7 +67,6 @@ export const Image = styled.img`
   @media (min-width: 1280px) {
     max-width: 568px;
     max-height: 712px;
-    border-bottom: none;
     margin: 0;
   }
 `;
@@ -87,7 +85,7 @@ export const SectionCrew = styled.div`
 
   @media (min-width: 1280px) {
     align-items: flex-start;
-    margin: 20px 0 0 50px;
+    margin: 70px 0 0 20px;
   }
 `;
 
@@ -109,7 +107,6 @@ export const CrewNavigation = styled.nav`
 
   @media (min-width: 1280px) {
     align-items: center;
-    margin: 50px 0 50px 0;
   }
 `;
 

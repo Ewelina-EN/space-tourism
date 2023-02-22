@@ -33,7 +33,7 @@ export const TextSection = styled.section`
     width: 450px;
     height: 334px;
     padding: 0;
-    margin: 65px 0 100px 0;
+    margin: 190px 0 100px 0;
   }
   @media (min-width: 1280px) {
     width: 650px;

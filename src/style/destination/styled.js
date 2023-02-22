@@ -21,9 +21,6 @@ export const Container = styled.main`
   }
   @media (min-width: 1280px) {
     background-image: url(${DDesktop});
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
   }
 `;
 
@@ -37,7 +34,7 @@ export const Section = styled.article`
   @media (min-width: 1280px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 1200px;
     padding: 0;
   }
@@ -55,12 +52,9 @@ export const Image = styled.img`
   }
 
   @media (min-width: 1280px) {
-    width: 445px;
-    height: 445px;
-  }
-  @media (min-width: 1280px) {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
+    margin: 0;
   }
 `;
 
@@ -76,7 +70,7 @@ export const Tab = styled.div`
   }
 
   @media (min-width: 1280px) {
-    width: 445px;
+    margin: 110px 0 0 100px;
     align-items: flex-start;
   }
 `;
@@ -151,7 +145,6 @@ export const Planet = styled.section`
   }
 
   @media (min-width: 1280px) {
-    width: 475px;
     align-items: flex-start;
   }
 `;
@@ -168,7 +161,7 @@ export const PlanetName = styled.p`
 
   @media (min-width: 768px) {
     font-size: 80px;
-    line-height: 91.68px;
+    line-height: 91px;
   }
 
   @media (min-width: 1280px) {
@@ -221,7 +214,7 @@ export const DataP = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 2.36px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #d0d6f9;
 `;
