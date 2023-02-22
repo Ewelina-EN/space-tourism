@@ -52,7 +52,7 @@ export default function Destination() {
 
   return (
     <Container>
-      <Title number="01" title="Pick your destination" />
+      <Title number="01" title="Pick your destination" size="big" />
       <Section>
         <Image src={image()} name={name} alt="photo of the planet" />
         <Tab>

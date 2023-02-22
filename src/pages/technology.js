@@ -8,7 +8,6 @@ import {
   Span,
   TechNav,
   Info,
-  Terminology,
   Keyword,
   TechInfo,
 } from "../style/technology/styled";
@@ -40,7 +39,7 @@ export default function Technology() {
   };
   return (
     <Container>
-      <Title number="03" title="Space launch 101" />
+      <Title number="03" title="Space launch 101" size="big" />
       <Section>
         <Image src={image()} name={name} alt="photo of the crew" />
         <TechInfo>
@@ -58,7 +57,7 @@ export default function Technology() {
             </MenuList>
           </TechNav>
           <Info>
-            <Terminology>The terminology...</Terminology>
+            <Title title="The terminology..." size="small" />
             <Keyword>{name}</Keyword>
             <Paragraph page="technology" description={description} />
           </Info>

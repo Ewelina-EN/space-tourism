@@ -30,50 +30,6 @@ export const Container = styled.main`
   }
 `;
 
-export const Header = styled.div`
-  font-family: "Barlow Condensed";
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 2.7px;
-  font-size: 20px;
-  font-weight: 200;
-  margin: 32px 0 24px 0;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 3.38px;
-    margin: 60px 0 0 -475px;
-  }
-
-  @media (min-width: 1280px) {
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: 4.725px;
-    margin: 0 0 0 -750px;
-  }
-`;
-
-export const HeaderSpan = styled.span`
-  padding-right: 15px;
-  opacity: 0.25;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 3.38px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 28px;
-    letter-spacing: 4.725px;
-  }
-`;
-
 export const Section = styled.article`
   display: flex;
   flex-direction: column;
@@ -86,7 +42,7 @@ export const Section = styled.article`
   @media (min-width: 1280px) {
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 26px 0 0 0;
   }
 
@@ -94,6 +50,7 @@ export const Section = styled.article`
     width: 1200px;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 `;
 
@@ -112,8 +69,6 @@ export const Image = styled.img`
     width: 515px;
     height: 527px;
     margin: 0;
-    object-fit: none;
-    object-position: 100% 100%;
   }
 `;
 
@@ -126,6 +81,7 @@ export const TechInfo = styled.div`
 
   @media (min-width: 1280px) {
     flex-direction: row;
+    margin-right: 100px;
   }
 `;
 
@@ -137,7 +93,8 @@ export const TechNav = styled.nav`
   }
 
   @media (min-width: 1280px) {
-    margin: 0 0 0 50px;
+    width: 120px;
+    margin: 0 0 0 0;
   }
 `;
 

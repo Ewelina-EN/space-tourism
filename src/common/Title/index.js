@@ -1,9 +1,9 @@
 import React from "react";
 import { Header, Number } from "./styled";
 
-function Title({ title, number }) {
+function Title({ title, number, size }) {
   return (
-    <Header>
+    <Header size={size}>
       <Number>{number}</Number>
       {title}
     </Header>

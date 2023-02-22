@@ -46,7 +46,7 @@ export default function Crew() {
 
   return (
     <Container>
-      <Title number="02" title="Meet your crew" />
+      <Title number="02" title="Meet your crew" size="big" />
       <Section>
         <Image src={image()} name={name} alt="photo of the crew" />
         <SectionCrew>
