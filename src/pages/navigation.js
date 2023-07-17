@@ -5,6 +5,7 @@ import {
   Menu,
   MenuList,
   Hamburger,
+  Line,
 } from "../style/navigation/styled";
 import logo from "../assets/shared/logo.svg";
 import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
@@ -18,6 +19,7 @@ export default function Nav() {
     <>
       <Navigation>
         <ImgLogo src={logo} alt="Space logo" />
+        <Line />
         <Menu open={navOpen}>
           <MenuList>
             <NavButton
