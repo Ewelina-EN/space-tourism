@@ -47,6 +47,7 @@ export const Section = styled.article`
   @media (min-width: 1280px) {
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: flex-start;
     margin: 0;
     width: 1200px;
   }

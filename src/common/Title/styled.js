@@ -28,7 +28,7 @@ export const Header = styled.div`
         font-size: 28px;
         letter-spacing: 4px;
         /* margin: 0; */
-        margin: 200px 0 -25px -820px;
+        margin: 200px 0 0 -820px;
       }
     `}
 
