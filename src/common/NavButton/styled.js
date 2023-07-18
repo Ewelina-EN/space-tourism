@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const ListItem = styled(Link)`
   ${({ size }) =>
@@ -18,7 +18,7 @@ export const ListItem = styled(Link)`
 
       @media (min-width: 768px) {
         font-size: 14px;
-        padding: 0 20px 0 0;
+        padding: 25px 0;
       }
 
       @media (min-width: 1280px) {
@@ -31,6 +31,15 @@ export const ListItem = styled(Link)`
       color: #d0d6f9;
       text-decoration: none;
     `}
+
+   ${({ to }) => {
+    const location = useLocation();
+    return (
+      location.pathname === to &&
+      `
+  border-bottom: 3px white solid;`
+    );
+  }}
 `;
 
 export const Number = styled.span`

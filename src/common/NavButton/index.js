@@ -1,21 +1,9 @@
 import React from "react";
 import { ListItem, Number } from "./styled";
 
-function NavButton({ number, name, link, size }) {
+function NavButton({ number, name, link, size, onClick }) {
   return (
-    // eslint-disable-next-line react/jsx-no-useless-fragment
-    // <>
-    //   {link ? (
-    //     <ListItem to={link} size={size}>
-    //       <Number>{number}</Number> {name}
-    //     </ListItem>
-    //   ) : (
-    //     <ListItem as="button" size={size}>
-    //       <Number>{number}</Number> {name}
-    //     </ListItem>
-    //   )}
-    // </>
-    <ListItem to={link} size={size}>
+    <ListItem to={link} size={size} onClick={onClick}>
       <Number>{number}</Number> {name}
     </ListItem>
   );

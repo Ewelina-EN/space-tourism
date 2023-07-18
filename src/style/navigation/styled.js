@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Navigation = styled.div`
   display: flex;
@@ -70,36 +69,14 @@ export const MenuList = styled.ul`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px;
+    padding: 0;
   }
 
   @media (min-width: 1280px) {
     position: absolute;
     justify-content: space-evenly;
-    padding: 30px 100px;
+    /* padding: 30px 100px; */
     width: 850px;
-  }
-`;
-
-export const ListItem = styled(Link)`
-  display: inline;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-  color: #ffffff;
-  margin: 0 10px;
-  text-decoration: none;
-  border-bottom: 3px transparent solid;
-  padding: 30px 0 5px 0;
-
-  @media (min-width: 768px) {
-    font-size: 14px;
-    padding: 0 20px 0 0;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 16px;
   }
 `;
 
