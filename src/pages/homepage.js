@@ -5,9 +5,8 @@ import {
   TextSection,
   SmallHeader,
   BigHeader,
-  HomeButton,
-  BtnSpan,
 } from "../style/homepage/styled";
+import NavButton from "../common/NavButton";
 
 export default function Homepage() {
   return (
@@ -22,9 +21,7 @@ export default function Homepage() {
       relax because we’ll give you a truly out of this world experience!"
         />
       </TextSection>
-      <HomeButton>
-        <BtnSpan>Explore</BtnSpan>
-      </HomeButton>
+      <NavButton name="EXPLORE" link="/destination" size="main" />
     </Container>
   );
 }

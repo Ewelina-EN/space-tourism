@@ -21,7 +21,7 @@ export const Container = styled.main`
   @media (min-width: 1280px) {
     background-image: url(${imgBackgroundDesktop});
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
 `;
@@ -83,60 +83,5 @@ export const BigHeader = styled.p`
     font-size: 150px;
     line-height: 172px;
     text-align: left;
-  }
-`;
-
-export const HomeButton = styled.button`
-  display: block;
-  border-radius: 50%;
-  border: 55px transparent;
-  letter-spacing: 2px;
-  overflow: visible;
-  background-color: #ffffff00;
-  margin-top: 50px;
-
-  &:hover {
-    background: transparent;
-  }
-
-  @media (min-width: 768px) {
-    margin: 50px auto 0 auto;
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(81.5px);
-    }
-
-    @media (min-width: 1280px) {
-      margin: 250px 0 0 0;
-
-      &:hover {
-        background: transparent;
-      }
-    }
-  }
-`;
-
-export const BtnSpan = styled.span`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  border-radius: 50%;
-  font-family: "Bellefair";
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 20px;
-  width: 150px;
-  height: 150px;
-
-  @media (min-width: 768px) {
-    width: 242px;
-    height: 242px;
-    line-height: 37px;
-    letter-spacing: 2px;
-    padding: 0;
-    font-size: 32px;
   }
 `;

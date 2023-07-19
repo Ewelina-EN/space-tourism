@@ -32,6 +32,34 @@ export const ListItem = styled(Link)`
       text-decoration: none;
     `}
 
+  ${({ size }) =>
+    size === "main" &&
+    css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      border-radius: 50%;
+      font-family: "Bellefair";
+      text-transform: uppercase;
+      margin: 220px 0 0 0;
+      font-size: 20px;
+      width: 150px;
+      height: 150px;
+      text-decoration: none;
+      color: black;
+
+      @media (min-width: 768px) {
+        width: 242px;
+        height: 242px;
+        line-height: 37px;
+        letter-spacing: 2px;
+        padding: 0;
+        font-size: 32px;
+      }
+    `}
+
   ${({ to }) => {
     const location = useLocation();
     return (
