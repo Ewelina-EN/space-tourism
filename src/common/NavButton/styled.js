@@ -32,7 +32,7 @@ export const ListItem = styled(Link)`
       text-decoration: none;
     `}
 
-   ${({ to }) => {
+  ${({ to }) => {
     const location = useLocation();
     return (
       location.pathname === to &&

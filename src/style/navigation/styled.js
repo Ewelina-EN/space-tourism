@@ -13,7 +13,7 @@ export const Navigation = styled.div`
   }
 
   @media (min-width: 1280px) {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 `;
 
@@ -22,7 +22,7 @@ export const ImgLogo = styled.img`
   margin: 24px 0 0 24px;
 
   @media (min-width: 768px) {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 60px;
     width: 48px;
   }
 `;
@@ -69,7 +69,8 @@ export const MenuList = styled.ul`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 20px;
+    margin: 0;
   }
 
   @media (min-width: 1280px) {
