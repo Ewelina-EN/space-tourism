@@ -21,6 +21,7 @@ export const Container = styled.main`
   }
   @media (min-width: 1280px) {
     background-image: url(${DDesktop});
+    justify-content: flex-start;
   }
 `;
 
@@ -33,9 +34,9 @@ export const Section = styled.article`
 
   @media (min-width: 1280px) {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 1200px;
+    align-items: end;
+    /* justify-content: center; */
+    /* width: 1200px; */
     padding: 0;
   }
 `;
@@ -48,7 +49,7 @@ export const Image = styled.img`
   @media (min-width: 768px) {
     width: 300px;
     height: 300px;
-    margin: 0;
+    margin: 30px 0;
   }
 
   @media (min-width: 1280px) {
@@ -130,6 +131,7 @@ export const ListItem = styled(Link)`
   &.active {
     border-bottom: 2px solid white;
     color: white;
+    padding: 0 0 10px 0;
   }
 `;
 
