@@ -64,8 +64,9 @@ export const ListItem = styled(Link)`
     const location = useLocation();
     return (
       location.pathname === to &&
+      css`
+        border-bottom: 3px white solid;
       `
-  border-bottom: 3px white solid;`
     );
   }}
 `;
