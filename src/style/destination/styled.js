@@ -21,7 +21,7 @@ export const Container = styled.main`
   }
   @media (min-width: 1280px) {
     background-image: url(${DDesktop});
-    justify-content: flex-start;
+    padding-bottom: 100px;
   }
 `;
 
@@ -186,7 +186,6 @@ export const Data = styled.section`
   }
 
   @media (min-width: 1280px) {
-    width: 100%;
     margin-left: 0;
     align-items: flex-start;
     justify-content: flex-start;

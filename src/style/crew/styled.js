@@ -22,9 +22,10 @@ export const Container = styled.main`
 
   @media (min-width: 1280px) {
     background-image: url(${CDesktop});
+    justify-content: flex-end;
   }
 
-  @media (min-width: 1990px) {
+  @media (min-width: 1690px) {
     align-items: center;
     justify-content: center;
   }

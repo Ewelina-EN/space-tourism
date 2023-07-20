@@ -20,7 +20,7 @@ export const Header = styled.div`
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 3px;
-        margin: 200px 0 0 -400px;
+        margin: 200px 0 0 -300px;
       }
 
       @media (min-width: 1280px) {

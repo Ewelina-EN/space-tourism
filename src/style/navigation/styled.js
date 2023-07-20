@@ -65,12 +65,13 @@ export const MenuList = styled.ul`
   justify-content: center;
   padding: 60px 140px 340px 22px;
   background: rgba(255, 255, 255, 0.1);
+  margin: 0;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
-    margin: 0;
+    /* margin: 0; */
   }
 
   @media (min-width: 1280px) {

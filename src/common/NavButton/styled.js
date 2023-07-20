@@ -43,7 +43,7 @@ export const ListItem = styled(Link)`
       border-radius: 50%;
       font-family: "Bellefair";
       text-transform: uppercase;
-      margin: 220px 0 0 0;
+      margin: 0;
       font-size: 20px;
       width: 150px;
       height: 150px;
@@ -57,6 +57,10 @@ export const ListItem = styled(Link)`
         letter-spacing: 2px;
         padding: 0;
         font-size: 32px;
+      }
+
+      @media (min-width: 1280px) {
+        margin: 220px 0 0 0;
       }
     `}
 

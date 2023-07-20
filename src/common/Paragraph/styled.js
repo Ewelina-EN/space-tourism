@@ -87,6 +87,10 @@ export const Content = styled.p`
       line-height: 25px;
       padding: 26px 0;
       margin: 0;
+      font-size: 15px;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
 
       @media (min-width: 768px) {
         width: 456px;

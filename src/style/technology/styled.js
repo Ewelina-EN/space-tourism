@@ -22,6 +22,7 @@ export const Container = styled.main`
 
   @media (min-width: 1280px) {
     background-image: url(${TDesktop});
+    justify-content: flex-end;
   }
 
   @media (min-width: 1990px) {
@@ -35,8 +36,8 @@ export const Section = styled.article`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 24px 30px 0 24px;
   width: 100%;
+  margin-top: 25px;
   /* padding: 29px 0 58px 0; */
 
   @media (min-width: 1280px) {
@@ -77,7 +78,7 @@ export const TechInfo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 34px 0 0 0;
+  margin: 34px 25px;
 
   @media (min-width: 1280px) {
     flex-direction: row;
@@ -215,6 +216,7 @@ export const Definition = styled.p`
   line-height: 25px;
   text-align: center;
   width: 327px;
+  margin: 29px 30px;
 
   @media (min-width: 768px) {
     width: 456px;

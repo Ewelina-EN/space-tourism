@@ -11,12 +11,13 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   min-height: 100vh;
 
   @media (min-width: 768px) {
     background-image: url(${imgBackgroundTablet});
+    justify-content: center;
   }
   @media (min-width: 1280px) {
     background-image: url(${imgBackgroundDesktop});
@@ -33,7 +34,7 @@ export const TextSection = styled.section`
     width: 450px;
     height: 334px;
     padding: 0;
-    margin: 190px 0 100px 0;
+    margin: 75px 0 100px 0;
   }
   @media (min-width: 1280px) {
     width: 650px;
